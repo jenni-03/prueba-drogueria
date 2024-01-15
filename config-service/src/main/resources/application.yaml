@@ -1,5 +1,6 @@
 server:
   port: 8081
+
 spring:
   cloud:
     config:
@@ -8,6 +9,8 @@ spring:
           default-label: main
           uri: https://github.com/jenni-03/prueba-drogueria.git
           search-paths: config-data
+      profiles:
+        active: native
   application:
     name: config-service
 
